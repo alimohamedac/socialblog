@@ -353,6 +353,10 @@
                         <img src="assets/images/resources/admin.jpg" alt="">
                         <span class="status f-online"></span>
                         <div class="user-setting">
+                            <form method="POST" action="{{ route('logout') }}" style="display: none" id="logout-form">
+                            @csrf
+
+                            </form>
                             <a href="#" title=""><span class="status f-online"></span>online</a>
                             <a href="#" title=""><span class="status f-away"></span>away</a>
                             <a href="#" title=""><span class="status f-off"></span>offline</a>
@@ -360,7 +364,10 @@
                             <a href="#" title=""><i class="ti-pencil-alt"></i>edit profile</a>
                             <a href="#" title=""><i class="ti-target"></i>activity log</a>
                             <a href="#" title=""><i class="ti-settings"></i>account setting</a>
-                            <a href="#" title=""><i class="ti-power-off"></i>log out</a>
+                            <a title="" href="#" onclick="event.preventDefault();
+                                                if(confirm('Are You Sure?')) { document.getElementById('logout-form').submit() }">
+                                <i class="ti-power-off"></i>
+                                {{ __('Log Out') }}</a>
                         </div>
                     </div>
 
