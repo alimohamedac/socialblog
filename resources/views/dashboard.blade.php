@@ -658,7 +658,7 @@
                                                 </figure>
                                                 <div class="newpst-input">
                                                     <form method="post">
-                                                        <textarea rows="2" placeholder="write something"></textarea>
+                                                        <textarea rows="2" placeholder="{{ __("What's your mind, ") }} {{ auth()->user()->name }}"></textarea>
                                                         <div class="attachments">
                                                             <ul>
                                                                 <li>
