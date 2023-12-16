@@ -22,3 +22,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/profile', [\App\Http\Controllers\ProfileController::class, 'show'])
+        ->name('profile');
+});
