@@ -195,6 +195,8 @@
 
         @include('partials.navbar')
 
+        @yield('profile')
+
         <section>
             <div class="gap2 gray-bg">
                 <div class="container-fluid">
