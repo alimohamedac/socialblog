@@ -3,7 +3,7 @@
 @section('profile')
     <section>
         <div class="feature-photo">
-            <figure><img src="images/resources/timeline-1.jpg" alt=""></figure>
+            <figure><img src="{{ asset('assets/images/resources/timeline-1.jpg') }}" alt=""></figure>
             <div class="add-btn">
                 <span>1205 followers</span>
                 <a href="#" title="" data-ripple="">Add Friend</a>
@@ -20,7 +20,7 @@
                     <div class="col-lg-2 col-sm-3">
                         <div class="user-avatar">
                             <figure>
-                                <img src="images/resources/user-avatar.jpg" alt="">
+                                <img src="{{ asset('assets/images/resources/user-avatar.jpg') }}" alt="">
                                 <form class="edit-phto">
                                     <i class="fa fa-camera-retro"></i>
                                     <label class="fileContainer">
@@ -35,7 +35,7 @@
                         <div class="timeline-info">
                             <ul>
                                 <li class="admin-name">
-                                    <h5>Janice Griffith</h5>
+                                    <h5>{{ auth()->user()->name }}</h5>
                                     <span>Group Admin</span>
                                 </li>
                                 <li>
@@ -66,7 +66,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page1.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page1.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -86,7 +86,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page2.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page2.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -106,7 +106,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page3.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page3.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -126,7 +126,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page4.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page4.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -146,7 +146,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page5.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page5.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -166,7 +166,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page6.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page6.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -186,7 +186,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page7.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page7.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -206,7 +206,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page8.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page8.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
@@ -226,7 +226,7 @@
                 <li>
                     <div class="f-page">
                         <figure>
-                            <a href="#" title=""><img src="images/resources/page4.jpg" alt=""></a>
+                            <a href="#" title=""><img src="{{ asset('assets/images/resources/page4.jpg') }}" alt=""></a>
                             <div class="dropdown pgs">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="ti-check"></i>liked
